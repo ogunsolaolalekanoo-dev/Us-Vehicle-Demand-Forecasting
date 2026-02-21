@@ -145,19 +145,61 @@ us-vehicle-demand-forecasting/
 ├── reports/
 └── README.md
 
-**Why This Project Matters**
+**Strategic Recommendations**
 
-This project demonstrates:
+Treat Light Trucks as the Structural Growth Segment
 
-Econometric rigor
+Finding:
 
-Machine learning benchmarking
+Light trucks overtook autos after 2008.
 
-Leakage detection and correction
+Post-2008 averages show trucks remain elevated relative to autos.
 
-Structural break awareness
+Foreign truck demand is highly stable (low CV_RMSE).
 
-Time-series cross-validation discipline
+Recommendation:
+
+OEMs and policy analysts should treat light trucks as a structurally dominant demand category rather than a cyclical anomaly. Forecasting, capacity planning, and capital allocation models should prioritize truck demand dynamics over legacy auto assumptions.
+
+**Domestic Segments Require Regime-Aware Forecasting**
+
+Finding:
+
+Domestic auto and truck segments show high cross-validation instability.
+
+RMSE varies significantly across time windows.
+
+Indicates sensitivity to macro shocks.
+
+Recommendation:
+
+Domestic vehicle demand models should incorporate macroeconomic indicators (e.g., unemployment, fuel prices, interest rates) and structural break detection mechanisms to improve robustness under economic stress.
+
+**Use Feature-Engineered ML Over Classical SARIMA**
+
+Finding:
+
+Linear regression reduced RMSE by 59–84% vs SARIMA.
+
+Tree models did not outperform linear models.
+
+Demand dynamics are largely linear autoregressive.
+
+Recommendation:
+
+Production forecasting systems for mature demand series should begin with structured feature engineering and linear autoregressive ML models before deploying complex ensemble methods.
+
+**Monitor Segment-Specific Stability for Risk Management**
+
+Finding:
+
+Foreign truck demand is highly stable.
+
+Domestic segments are shock-sensitive.
+
+Recommendation:
+
+Risk-adjusted planning scenarios should weight domestic demand forecasts with wider confidence intervals, while foreign truck forecasts can be treated as lower-variance projections.
 
 Business interpretation of macro demand dynamics
 
