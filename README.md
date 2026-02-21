@@ -110,14 +110,6 @@ Feature-engineered linear regression reduced forecast error by 59–84% relative
 | Truck Domestic | 31.27   |
 | Truck Foreign  | 4.99    |
 
-## Model Performance Comparison
-
-![Model Comparison](images/model_comparison.png)
-
-## Structural Demand Shift
-
-![Structural Shift](images/structural_shift.png)
-**Findings:**
 
 Foreign truck demand is highly stable across time.
 
